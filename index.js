@@ -1,13 +1,14 @@
 var readlineSync = require('readline-sync');
 
 var dobInput = readlineSync.question("Enter your date of birth in 'DDMMYYYY' format: ");
+// console.log(dobInput);
 var luckyNumberInput = readlineSync.question("Enter your lucky number: ");
 console.log("---------------------------");
 console.log("You entered: ");
 console.log("Your Birthday is ", dobInput, "and your lucky number is", luckyNumberInput);
 
 var arrOfDob = JSON.parse("[" + dobInput + "]");
-// console.log(arrOfDob);
+console.log(arrOfDob);
 var array = dobInput.split("");
 // console.log(array);
 var sumOfDob = 0;
